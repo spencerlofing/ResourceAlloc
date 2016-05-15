@@ -1,6 +1,7 @@
 #ifndef BSTINTERFACE_H
 #define BSTINTERFACE_H
 #include "Node.h"
+template <typename T>
 class BST
 {
 	private:
