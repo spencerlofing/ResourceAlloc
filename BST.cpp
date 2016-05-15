@@ -1,5 +1,6 @@
 #include "BST.h"
-BST::BST()
+template <typename T>
+BST<T>::BST()
 {
 
 }
