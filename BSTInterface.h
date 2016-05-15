@@ -6,7 +6,7 @@ class BST
 	private:
 		Node<T>* m_root;
 	public:
-		virtual ~BSTInterface();
+		virtual ~BSTInterface(){};
 		virtual void insert(Node<T>* newNode)=0;
 };
 #endif
