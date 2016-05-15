@@ -6,8 +6,6 @@ person::person()
 	m_score = 0.0;
 	m_schedule = nullptr;
 	m_name = "";
-	m_left = nullptr;
-	m_right = nullptr;
 }
 person::~person()
 {
@@ -83,13 +81,4 @@ void person::setEquation(string equation)
 	m_equation = equation;
 	m_tokenizer = new exprtoken(m_equation);
 	m_tree = new BSTExpr(m_tokenizer, nullptr, this);
-}
-void person::setLeft(person* left)
-{
-	m_left = left;
-}
-
-void person::setRight(person* right)
-{
-	m_right = right;
 }
