@@ -30,7 +30,7 @@ ifstream people;
 ifstream ftask;
 string line;
 tokenizer* tok;
-
+//Takes in the size of a heap and sorts it to a minheap with the smallest value on top
 void heapify(int size)
 {
 	for(int j = size; log(j)>0; j--)
@@ -46,6 +46,7 @@ void heapify(int size)
 		}
 	}
 }
+//Takes a minheap, pops the root and pushes it to a new array, moves the rightmost, lowest value to the root and repeats while for the size of the task heap
 void sortHeap()
 {
 	int num = currTask;
@@ -57,6 +58,8 @@ void sortHeap()
 		heapify(num);
 	}
 }
+//Takes the list of tasks from a file and inserts them into a minheap
+//returns a minheap in the form of an array
 void insertMinHeap()
 {
 	string today;
