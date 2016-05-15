@@ -1,4 +1,7 @@
 #include "Node.h"
-Node::Node
+template <typename T>
+Node<T>::Node
 {
+	m_left = nullptr;
+	m_right = nullptr;
 }
